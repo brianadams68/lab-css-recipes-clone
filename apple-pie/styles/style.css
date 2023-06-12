@@ -13,12 +13,93 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
+  
 }
 
 /*  Set the font */
 body {
-  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  line-height: 1.5;
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.header {
+  background-color: grey;
+  background-image: url('../images/apple-pie.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 250px 0;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-size: 64px;
+  font-weight: lighter;
+}
+
+.informative-text {
+  font-size: 2em;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: 700px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 19px;
+}
+
+main img {
+  display: block;
+  margin: 32px auto;
+  width: 400px;
+}
+
+ul {
+  padding: 0 0 0 20px;
+}
+
+ol {
+  padding: 0 0 0 10px;
+}
+
+ul li {
+  list-style-type: '- ';
+}
+
+ol li {
+  list-style: none;
+  counter-increment: unordered-list-item;
+}
+
+ol li:before {
+  content: counter(unordered-list-item) ')';
+}
+
+hr {
+  height: 2px;
+  background-color: darkgray;
+}
